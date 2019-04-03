@@ -5,13 +5,10 @@
  * Date: 01/04/19
  * Time: 21:50
  */
-require __DIR__ . '/../vendor/autoload.php';
-use App\Wcs\Hello;
-use HelloWorld\SayHello as HelloWorld;
+require_once __DIR__ . '/../vendor/autoload.php';
+$hello = new \App\Wcs\Hello();
 
-
-$hello = new Hello;
-$helloWorld = new HelloWorld();
+$helloWorld = new \HelloWorld\SayHello();
 
 echo $hello->talk();
 echo $helloWorld->world();
